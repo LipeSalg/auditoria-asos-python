@@ -55,6 +55,17 @@ A solução automatiza o processo de auditoria através das seguintes etapas:
 - Identificação automática de pendências;
 - Geração de relatórios para acompanhamento da conformidade ocupacional
 
+## Resultados
+
+A solução automatizou a auditoria de exames ocupacionais por meio de:
+
+- Leitura automática de ASOs em PDF;
+- Extração de informações utilizando OCR;
+- Identificação de função, setor e exames realizados;
+- Estruturação dos dados em PostgreSQL;
+- Relacionamento entre Função, GHE e Exames Obrigatórios;
+- Identificação automática de exames pendentes através de views SQL.
+
 ## Tecnologias
 
 - Python
