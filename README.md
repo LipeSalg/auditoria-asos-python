@@ -17,26 +17,26 @@ Esse processo demandava um elevado volume de trabalho operacional, consumia muit
 
 O projeto realiza:
 
-Extração de informações de ASOs em PDF;
-Padronização e tratamento dos dados utilizando Python;
-Armazenamento das informações em PostgreSQL;
-Relacionamento entre funcionários, cargos e exames obrigatórios;
-Identificação automática de exames pendentes ou não realizados.
+- Extração de informações de ASOs em PDF;
+- Padronização e tratamento dos dados utilizando Python;
+- Armazenamento das informações em PostgreSQL;
+- Relacionamento entre funcionários, cargos e exames obrigatórios;
+- Identificação automática de exames pendentes ou não realizados.
 
 ## Tecnologias
 
-Python
-Pandas
-PostgreSQL
-SQL
-PDFPlumber
-Regex
-Git e GitHub
+- Python
+- Pandas
+- PostgreSQL
+- SQL
+- PDFPlumber
+- Regex
+- Git e GitHub
 
 ## Estrutura do Projeto
 
-dados/ – arquivos utilizados durante o desenvolvimento;
-notebooks/ – análises exploratórias e testes;
-src/ – scripts principais do projeto;
-sql/ – consultas e scripts de banco de dados;
-imagens/ – diagramas e fluxos do projeto.
+- dados/ – arquivos utilizados durante o desenvolvimento;
+- notebooks/ – análises exploratórias e testes;
+- src/ – scripts principais do projeto;
+- sql/ – consultas e scripts de banco de dados;
+- imagens/ – diagramas e fluxos do projeto.
