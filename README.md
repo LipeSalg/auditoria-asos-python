@@ -23,8 +23,6 @@ Armazenamento das informações em PostgreSQL;
 Relacionamento entre funcionários, cargos e exames obrigatórios;
 Identificação automática de exames pendentes ou não realizados.
 
-
-
 ## Tecnologias
 
 Python
