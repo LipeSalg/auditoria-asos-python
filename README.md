@@ -13,15 +13,47 @@ A auditoria dos exames ocupacionais era realizada de forma predominantemente man
 
 Esse processo demandava um elevado volume de trabalho operacional, consumia muitas horas de conferência e aumentava o risco de inconsistências, especialmente em auditorias com grande quantidade de colaboradores. A necessidade de verificar manualmente quais exames haviam sido realizados e identificar eventuais pendências tornava o acompanhamento da conformidade ocupacional lento e pouco escalável.
 
+
+## Fonte dos dados
+
+A matriz de exames ocupacionais utilizada no projeto foi disponibilizada originalmente em formato PDF, contendo a relação entre funções e os respectivos exames obrigatórios.
+
+Para possibilitar a automação da auditoria, os dados foram extraídos, estruturados e padronizados em formato tabular, permitindo sua utilização em consultas SQL e validações automatizadas.
+
+## Regras de Negócio
+
+Cada função possui uma relação específica de exames obrigatórios definida pela matriz ocupacional.
+
+O processo de auditoria consiste em:
+
+1. Identificar a função do colaborador.
+2. Consultar os exames obrigatórios para a função.
+3. Verificar os exames realizados pelo colaborador.
+4. Comparar os exames realizados com os exames exigidos.
+5. Identificar pendências ou não conformidades.
+
+Exemplo:
+
+Função: Motorista
+
+Exames obrigatórios:
+- Clínico Ocupacional
+- Audiometria
+
+Resultado da auditoria:
+- Clínico Ocupacional: OK
+- Audiometria: Pendente
+
 ## Solução Desenvolvida
 
-O projeto realiza:
+A solução automatiza o processo de auditoria através das seguintes etapas:
 
-- Extração de informações de ASOs em PDF;
-- Padronização e tratamento dos dados utilizando Python;
-- Armazenamento das informações em PostgreSQL;
-- Relacionamento entre funcionários, cargos e exames obrigatórios;
-- Identificação automática de exames pendentes ou não realizados.
+- Extração de dados dos ASOs em PDF;
+- Tratamento e padronização das informações;
+- Armazenamento em PostgreSQL;
+- Relacionamento entre colaboradores, funções e exames obrigatórios;
+- Identificação automática de pendências;
+- Geração de relatórios para acompanhamento da conformidade ocupacional
 
 ## Tecnologias
 
@@ -29,9 +61,13 @@ O projeto realiza:
 - Pandas
 - PostgreSQL
 - SQL
-- PDFPlumber
 - Regex
+- Unidecode
 - Git e GitHub
+- PDF2Image
+- Tesseract OCR
+- PyTesseract
+- Google Colab
 
 ## Estrutura do Projeto
 
